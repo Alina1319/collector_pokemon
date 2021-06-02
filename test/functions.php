@@ -38,5 +38,6 @@ class functions extends TestCase
         $input = "";
         $this->expectException(TypeError::class);
         displayPokemon($input);
+
     }
 }
