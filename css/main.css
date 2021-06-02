@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #eeeeee;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.main-img {
+  width: 100%;
+  height: 100%;
+}
+
+.pika {
+  width: 450px;
+  height: 450px;
+  margin: auto auto 60px auto;
+}
+
+.pika-heading {
+  font-family: "Finger Paint", cursive;
+  font-size: 3rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #444343;
+  text-align: center;
+}
+
+.add_button {
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+}
+
+.pika-section {
+  margin-top: 30px;
+}
+
+.more-pokemons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  text-align: center;
+  padding: 10px;
+  width: 100px;
+}
+
+.btn2 {
+  padding: 10px;
+  width: 150px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f1430ece;
+  border: none;
+  color: #ffffff;
+  font-size: 1.044rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 12px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.description {
+  border-radius: 14px;
+  background-image: linear-gradient(to right bottom, #fa6c6c, #f97171, #f87777, #f67c7c, #f58181);
+  width: 280px;
+  height: 190px;
+  transition: 0.25s;
+  -webkit-box-shadow: 5px 5px 15px 2px #5B5B5B44;
+  box-shadow: 5px 5px 15px 2px #5B5B5B44;
+  margin-left: 35px;
+  margin-top: 70px;
+}
+
+.description:hover {
+  transform: scale(1.1);
+}
+
+.col {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.favourite-pokemon {
+  margin-left: 60px;
+  font-family: "Finger Paint", cursive;
+  font-size: 3rem;
+  margin-bottom: 70px;
+  margin-top: 120px;
+  color: #5e5b5b;
+}
+
+form {
+  margin-left: 120px;
+}
+
+.form-section {
+  display: flex;
+}
+
+.form-section h2 {
+  font-family: "Finger Paint", cursive;
+  margin-bottom: 20px;
+  font-size: 2.69rem;
+}
+
+form input {
+  border-radius: 5px;
+  border: 1px solid #D75B38A8;
+  width: 330px;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+form label {
+  color: #474545;
+  font-size: 1.2rem;
+}
+
+form select {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #D75B38A8;
+  width: 332px;
+  padding: 15px;
+}
+
+.pokemon-background {
+  margin-top: -260px;
+}
+
+.pokemon-heading {
+  text-align: center;
+  padding-top: 10px;
+  color:white;
+  font-size: 2.07rem;
+}
+
+.type-class {
+  background-color: #FFFFFF3F;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+  padding: 5px 18px;
+  margin: 18px 3px;
+  font-size: 0.94rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #FFFFFFFF;
+}
+
+.charmander {
+  height: 700px;
+  weight: 600px;
+  text-align: center;
+}
+
+.charmander img {
+  weight : 100%;
+  height: 100%;
+}
+
+.adding {
+  font-family: "Finger Paint", cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 60px;
+  color: #555555;
+}
+
+.add_button {
+  color: #585858;
+}
+
