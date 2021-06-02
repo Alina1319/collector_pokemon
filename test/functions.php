@@ -29,7 +29,7 @@ class functions extends TestCase
     public function testDisplayPokemonFailure()
     {
         $input = [];
-        $result = DisplayPokemon($input);
+        $result = displayPokemon($input);
         $expected = '<section class="pokedex"></section>';
         $this->assertEquals($expected, $result);
     }
@@ -37,6 +37,6 @@ class functions extends TestCase
     {
         $input = "";
         $this->expectException(TypeError::class);
-        DisplayPokemon($input);
+        displayPokemon($input);
     }
 }
