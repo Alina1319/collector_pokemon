@@ -13,7 +13,7 @@ function getPokemons($db): array
     $query = $db->prepare('SELECT `name`, `pokemon_type`,`height`,`weight`,`ability` FROM `pokedex` JOIN `types` 
                            ON `pokedex`.`type` = `types`.`id`;');
     $result = $query->execute();
-    $pokemon = $query->fetchall();
+    $pokemon = $query->fetchAll();
     return $pokemon;
 }
 
