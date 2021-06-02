@@ -173,7 +173,7 @@ form select {
 .pokemon-heading {
   text-align: center;
   padding-top: 10px;
-  color:white;
+  color: #FFFFFFFF;
   font-size: 2.07rem;
 }
 
@@ -198,7 +198,7 @@ form select {
 }
 
 .charmander img {
-  weight : 100%;
+  weight: 100%;
   height: 100%;
 }
 
