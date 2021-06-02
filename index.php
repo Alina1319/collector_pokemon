@@ -14,11 +14,11 @@ $pokemons = getPokemons($db);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
+    <link rel="stylesheet" href="resources/css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link rel="icon" href="https://pngimg.com/uploads/pokeball/pokeball_PNG21.png">
-    <link rel="stylesheet" href="resources/css/normalize.css">
 
 </head>
 <body>

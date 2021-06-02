@@ -28,7 +28,7 @@ function displayPokemon(array $pokemons): string
                     'Weight: '.$pokemon['weight'].'</p></div><div class="type-class"><p class="ability">'.'Ability: '.
                     $pokemon['ability']. '</p></div></div></div>';
    }
-        $output .= '</section>';
-        return $output;
+   $output .= '</section>';
+   return $output;
 }
 
