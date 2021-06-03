@@ -32,7 +32,7 @@ class functions extends TestCase
     {
         $input = [];
         $result = displayPokemon($input);
-        $expected = '<section class="pokedex"><p>Is an error</p></section>';
+        $expected = '<section class="pokedex"><p>Something went wrong</p></section>';
         $this->assertEquals($expected, $result);
     }
 

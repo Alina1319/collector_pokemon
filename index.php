@@ -6,7 +6,6 @@ $db = getDB();
 $pokemons = getPokemons($db);
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +25,10 @@ $pokemons = getPokemons($db);
         <h1 class="pika-heading">Pokemon collection</h1>
         <div class="pika">
             <img class="main-img" src="./img/pika.png" alt="pika">
+        </div>
+        <div class="more-pokemons">
+            <p class="add_button">Click here to add a new pokemon into pokedex</p>
+            <a href="./form.php" class="button btn" style="vertical-align:middle"><span>Add</span></a>
         </div>
     </section>
 <?php
