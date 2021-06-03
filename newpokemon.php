@@ -13,7 +13,7 @@
 <body>
 <div class="main">
     <div class="adding">
-        <p>Congratulation, you just caught a new pokemon. <br> Go and Catch 'Em All!
+        <p>Congratulation, you just caught a new pokemon.<br>Go and Catch 'Em All!
         </p>
     </div>
     <div class="charmander">
@@ -22,11 +22,11 @@
     <section class="btns">
         <div class="more-pokemons">
             <p class="add_button">Click here to go back to the pokedex</p>
-            <a href="./index.php" class="button  btn" style="vertical-align:middle"><span> Pokedex</span></a>
+            <a href="./index.php" class="button  btn" style="vertical-align:middle"><span>Pokedex</span></a>
         </div>
         <div class="more-pokemons">
             <p class="add_button">Click here to go back to the form</p>
-            <a href="./form.php" class="button  btn" style="vertical-align:middle"><span> Form</span></a>
+            <a href="./form.php" class="button  btn" style="vertical-align:middle"><span>Form</span></a>
         </div>
     </section>
 </div>

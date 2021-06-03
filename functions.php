@@ -91,13 +91,13 @@ function insertNewPokemon($errors, $pokemon, $db)
     ) {
         $name = $pokemon['name'];
         $type = $pokemon['type'];
-        $query = $db->prepare('SELECT `id` FROM `types` WHERE `pokemon_type` =?;');
+        $query = $db->prepare('SELECT `id` FROM `types` WHERE `pokemon_type` = ?;');
         $query->execute([$type]);
         $poke = $query->fetchAll();
         $height = $pokemon['height'];
         $weight = $pokemon['weight'];
         $ability = $pokemon['ability'];
-        $query = $db->prepare('INSERT INTO `pokedex` (`name`, `type`,`height`,`weight`,`ability`) VALUES (?, ?, ?, ?, ?);');
+        $query = $db->prepare('INSERT INTO `pokedex` (`name`, `type`, `height`, `weight`, `ability`) VALUES (?, ?, ?, ?, ?);');
         $result = $query->execute([$name, $poke[0]['id'], $height, $weight, $ability]);
     }
     return $result;

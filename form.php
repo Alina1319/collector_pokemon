@@ -22,7 +22,7 @@ if (isset($_POST['submit'])) {
     <link rel="icon" href="https://pngimg.com/uploads/pokeball/pokeball_PNG21.png">
 </head>
 <body class="overflow">
-    <section  class="pokemon-form">
+    <section class="pokemon-form">
         <h2 class="favourite-pokemon">
             Add your pokemon!
         </h2>

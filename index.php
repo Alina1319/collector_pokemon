@@ -28,7 +28,7 @@ $pokemons = getPokemons($db);
         </div>
         <div class="more-pokemons">
             <p class="add_button">Click here to add a new pokemon into pokedex</p>
-            <a href="./form.php" class="button  btn" style="vertical-align:middle"><span>Add </span></a>
+            <a href="./form.php" class="button btn" style="vertical-align:middle"><span>Add</span></a>
         </div>
     </section>
 <?php
