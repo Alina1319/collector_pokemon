@@ -2,7 +2,7 @@
 
 function getDB()
 {
-    $db = new PDO('mysql:host=db;dbname=pokemons','root','password');
+    $db = new PDO('mysql:host=db;dbname=pokemons', 'root', 'password');
     $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     return $db;
@@ -28,7 +28,7 @@ function displayPokemon(array $pokemons): string
                 $pokemon['name'] . '</p></div><div class="col"><div class="type-class"><p class="type">Type: ' .
                 $pokemon['pokemon_type'] . '</p></div><div class="type-class"><p class="height">Height: ' .
                 $pokemon['height'] . '</p></div></div><div class="col"><div class="type-class"><p class="weight">' .
-                'Weight: ' . $pokemon['weight'] .'</p></div><div class="type-class"><p class="ability">' . 'Ability: '.
+                'Weight: ' . $pokemon['weight'] . '</p></div><div class="type-class"><p class="ability">' . 'Ability: ' .
                 $pokemon['ability'] . '</p></div></div></div>';
         }
     }
