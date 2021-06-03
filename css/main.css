@@ -214,3 +214,13 @@ form select {
   color: #585858;
 }
 
+.error {
+  color: #FF0000FF;
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-around;
+}
