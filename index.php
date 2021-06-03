@@ -6,7 +6,6 @@ $db = getDB();
 $pokemons = getPokemons($db);
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +18,6 @@ $pokemons = getPokemons($db);
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link rel="icon" href="https://pngimg.com/uploads/pokeball/pokeball_PNG21.png">
-
 </head>
 <body>
 <main>
@@ -28,6 +26,10 @@ $pokemons = getPokemons($db);
         <div class="pika">
             <img class="main-img" src="./img/pika.png" alt="pika">
         </div>
+        <div class="more-pokemons">
+            <p class="add_button">Click here to add a new pokemon into pokedex</p>
+            <a href="./form.php" class="button  btn" style="vertical-align:middle"><span>Add </span></a>
+        </div>
     </section>
 <?php
 echo displayPokemon($pokemons);
@@ -35,5 +37,3 @@ echo displayPokemon($pokemons);
 </main>
 </body>
 </html>
-
-
