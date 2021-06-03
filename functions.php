@@ -19,16 +19,19 @@ function getPokemons($db): array
 
 function displayPokemon(array $pokemons): string
 {
-   $output = '<section class="pokedex">';
-   foreach ($pokemons as $pokemon){
-        $output .= '<div class="description"><div class="pokemon-name"><p class="pokemon-heading">'.
-                    $pokemon['name']. '</p></div><div class="col"><div class="type-class"><p class="type">Type: '.
-                    $pokemon['pokemon_type'] . '</p></div><div class="type-class"><p class="height">Height: '.
-                    $pokemon['height']. '</p></div></div><div class="col"><div class="type-class"><p class="weight">' .
-                    'Weight: '.$pokemon['weight'].'</p></div><div class="type-class"><p class="ability">'.'Ability: '.
-                    $pokemon['ability']. '</p></div></div></div>';
-   }
-   $output .= '</section>';
-   return $output;
+    $output = '<section class="pokedex">';
+    if (empty($pokemons)) {
+        $output .= '<p>Is an error</p>';
+    } else {
+        foreach ($pokemons as $pokemon) {
+            $output .= '<div class="description"><div class="pokemon-name"><p class="pokemon-heading">' .
+                $pokemon['name'] . '</p></div><div class="col"><div class="type-class"><p class="type">Type: ' .
+                $pokemon['pokemon_type'] . '</p></div><div class="type-class"><p class="height">Height: ' .
+                $pokemon['height'] . '</p></div></div><div class="col"><div class="type-class"><p class="weight">' .
+                'Weight: ' . $pokemon['weight'] .'</p></div><div class="type-class"><p class="ability">' . 'Ability: '.
+                $pokemon['ability'] . '</p></div></div></div>';
+        }
+    }
+    $output .= '</section>';
+    return $output;
 }
-
